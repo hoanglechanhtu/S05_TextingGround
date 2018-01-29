@@ -18,8 +18,8 @@ class S05_TEXTINGGROUND_API UPatrolRoute : public UActorComponent
 public:	
 	// Sets default values for this component's properties
 	UPatrolRoute();
-
-	TArray<AActor*> GetPatrolRoute() const;
+	UFUNCTION(BlueprintCallable, Category = Setup)
+		TArray<AActor*> GetPatrolRoute() const;
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
